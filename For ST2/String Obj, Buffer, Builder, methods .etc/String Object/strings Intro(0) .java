@@ -4,7 +4,7 @@ import java.lang.*;
     - Strings are immutable (but can be muted using string buffer)
 
   - String is an object that represents sequence of characters.
-  - java.lang packages
+  - java.lang packages (do not need to import it)
   - every string we create in java is an object of type String
   - string obj are immutable i.e we can not change its state, i.e conversion from string to int will be stored in a new integer, but the original string remains the same
   - Creating string :- 
@@ -34,7 +34,7 @@ import java.lang.*;
 
             here 2 objects are created, but s2 is a reference to object 's1'.
 
-            if we change s1's data then s2's data will also change, but if we change s2's data, s1 data will not change and a new object (not reference) for s2 will be created
+            if we change s1's data then s2's data will not change,rather s1 will point to a new block with new data and s2 will point to the old data only, and both will have different memory in string pools for their data 
 
     
         - int can take ony int 
@@ -104,6 +104,10 @@ import java.lang.*;
                     eg. str.join(":","9","10","11") ===> 9:10:11
                     eg. str.join(":","9","10","11") ===> 9:10:11
                     eg. str.join(":","hello hi") ===> hello hi
+                    
+             20. .split() -> used to split a multi word string on basis of a regex eg. space " " and store the words into an array 
+                    
+                    String arr[] = str.split() 
 
  */
 class StringsIntro{
